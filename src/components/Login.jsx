@@ -1,0 +1,87 @@
+import React, {useState} from 'react';
+import Avatar from '@material-ui/core/Avatar';
+import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import FormControl from '@material-ui/core/FormControl';
+import Input from '@material-ui/core/Input';
+import InputLabel from '@material-ui/core/InputLabel';
+import FormatListBulletedTwoToneIcon from '@material-ui/icons/FormatListBulletedTwoTone';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import './Login.css';
+import ListAltTwoToneIcon from '@material-ui/icons/ListAltTwoTone';
+
+
+export const Login = (props) => {
+
+    const [usernameState, setUsernameState] = useState("");
+    const [passwordState, setPasswordState] = useState("");
+
+    const handleUsernameChange = (e) => {
+        setUsernameState(e.target.value);
+    }
+
+    const handlePasswordChange = (e) => {
+        setPasswordState(e.target.value);
+    }
+
+    const handleLogin = (e) => {
+        e.preventDefault();
+        if (usernameState === localStorage.getItem("Username") && passwordState === localStorage.getItem("Password")) {
+            props.successfully();
+        } else {
+            props.failed();
+        }
+    }
+
+    return (
+        <div>
+            <CssBaseline/>
+            <main className="layout">
+                <Paper className="paper">
+
+                    <Typography variant="h2">Task Planner</Typography>
+                    <ListAltTwoToneIcon style={{fontSize: 150}}/>
+                    <form className="form" onSubmit={handleLogin}>
+                        <FormControl margin="normal" required fullWidth>
+                            <InputLabel htmlFor="email">Username</InputLabel>
+                            <Input
+                                onChange={handleUsernameChange}
+                                id="username"
+                                name="username"
+                                autoComplete="username"
+                                autoFocus
+                            />
+                        </FormControl>
+                        <FormControl margin="normal" required fullWidth>
+                            <InputLabel htmlFor="password">Password</InputLabel>
+                            <Input
+                                name="password"
+                                type="password"
+                                id="password"
+                                autoComplete="current-password"
+                                onChange={handlePasswordChange}
+                            />
+                        </FormControl>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <Button
+                            type="submit"
+                            fullWidth
+                            variant="contained"
+                            color="primary"
+                            className="submit"
+                        >
+                            LOG IN
+                        </Button>
+                        <br/>
+                        <br/>
+                        <Button fullWidth variant="contained" disabled>Create Account
+                        </Button>
+                    </form>
+                </Paper>
+            </main>
+        </div>
+    );
+}

@@ -29,9 +29,13 @@ npm install
 npm start
 ```
 
+### Vista del Login desde un celular
+
+![](public/img/login.jpeg)
+
 3. Para el login las credenciales son las siguientes:
 
-**Username:** juan.frasica@mail.escuelaing.edu.co
+**Username:** sebastian
 **Password:** 1234
 
 
