@@ -1,15 +1,12 @@
 import React, {useState} from 'react';
-import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import FormControl from '@material-ui/core/FormControl';
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
-import FormatListBulletedTwoToneIcon from '@material-ui/icons/FormatListBulletedTwoTone';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import './Login.css';
-import ListAltTwoToneIcon from '@material-ui/icons/ListAltTwoTone';
 import AssignmentTwoToneIcon from '@material-ui/icons/AssignmentTwoTone';
 
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import clsx from 'clsx';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
@@ -74,7 +73,7 @@ export const MyDrawer = (props) => {
 
     return (
         <div>
-            <Button onClick={toggleDrawer("left", true)}>{"left"}</Button>
+            <Button onClick={toggleDrawer("left", true)}>Menu</Button>
             <Drawer anchor={"left"} open={state["left"]} onClose={toggleDrawer("left", false)}>
                 {list("left")}
             </Drawer>
