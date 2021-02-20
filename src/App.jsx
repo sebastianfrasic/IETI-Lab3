@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {Login} from "./components/Login";
+import {MyDrawer} from "./components/MyDrawer";
 
 
 const App = (props) => {
@@ -27,6 +28,7 @@ const App = (props) => {
     return (
         <div>
             <Login successfully={handleSuccessfullyLogin} failed={handleFailedLogin}/>
+            <MyDrawer/>
         </div>
     );
 }

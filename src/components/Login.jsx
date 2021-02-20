@@ -10,6 +10,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import './Login.css';
 import ListAltTwoToneIcon from '@material-ui/icons/ListAltTwoTone';
+import AssignmentTwoToneIcon from '@material-ui/icons/AssignmentTwoTone';
 
 
 export const Login = (props) => {
@@ -41,7 +42,7 @@ export const Login = (props) => {
                 <Paper className="paper">
 
                     <Typography variant="h2">Task Planner</Typography>
-                    <ListAltTwoToneIcon style={{fontSize: 150}}/>
+                    <AssignmentTwoToneIcon style={{fontSize: 150}}/>
                     <form className="form" onSubmit={handleLogin}>
                         <FormControl margin="normal" required fullWidth>
                             <InputLabel htmlFor="email">Username</InputLabel>
