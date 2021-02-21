@@ -1,6 +1,10 @@
 # Lab # 3 - IETI
 # 1.2 Task Planner Project - Front End
 
+[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://frasica-ieti-lab3.herokuapp.com/)
+
+[![Deploy to Firebase](https://firebase.google.com/downloads/brand-guidelines/PNG/logo-built_white.png?hl=es)](https://lab3-ieti.web.app/)
+
 
 ### Pre-requisitos 📋
 
