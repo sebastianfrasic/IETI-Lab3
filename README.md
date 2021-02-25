@@ -39,7 +39,13 @@ npm start
 
 3. Para el login las credenciales son las siguientes:
 
-**Username:** sebastian
+
+
+
+**Username:** Sebastian
+
+
+
 **Password:** 12345
 
 
